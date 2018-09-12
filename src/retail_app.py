@@ -12,6 +12,7 @@ api.add_resource(ProductsController, "/products", "/products/<product_id>",
 api.add_resource(OrdersController,
                  "/orders",
                  "/orders/<order_id>",
+
                  endpoint="orders")
 
 

@@ -1,7 +1,8 @@
-
 import os
 import logging
 
+
+# Default Constants
 LOCAL_FS_STORAGE = "local_fs"
 MONGO_DB_STORAGE = "mongodb"
 
@@ -17,7 +18,7 @@ CONFIG = {
     # mongodb
     "storage_backend": os.getenv("RETAIL_STORAGE_BACKEND", LOCAL_FS_STORAGE),
     "local_fs_base_path": os.getenv("RETAIL_LOCAL_STORAGE_BASE_PATH",
-                                    "/tmp/retail"),
+                                    "/tmp/data"),
     "api_port": os.getenv("RETAIL_API_PORT", 5000),
     "api_log_level": logging._nameToLevel[os.getenv("RETAIL_API_PORT", "INFO")]
 }

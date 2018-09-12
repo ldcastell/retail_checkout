@@ -1,5 +1,7 @@
-import pytest
 import json
+
+import pytest
+
 from business_logic.orders_bl import OrdersBl
 
 
@@ -52,7 +54,10 @@ class TestOrdersBl:
 
                 assert receipt != {}
 
-                assert receipt["sales_tax"] == orders[order]["expected_sales_tax"]
+                assert receipt["sales_tax"] == \
+                    orders[order]["expected_sales_tax"]
+
+                assert "order_id" in receipt.keys()
 
                 assert receipt["total"] == orders[order]["expected_total"]
 
@@ -62,8 +67,3 @@ class TestOrdersBl:
         products = self.get_test_products_from_order(orders["order_3"])
         with pytest.raises(ValueError):
             orders_bl.submit({}, products)
-
-
-
-
-
