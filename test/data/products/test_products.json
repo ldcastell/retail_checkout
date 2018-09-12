@@ -1,0 +1,74 @@
+[
+  {
+    "id": "39b3ac50-3384-41b4-917e-f8fca6c2fd6e",
+    "name": "Chocolate Bar",
+    "description": "",
+    "imported": false,
+    "category": "food",
+    "price": 0.85
+  },
+  {
+    "id": "cec87379-bdcf-44c7-b6f0-dfdce7c6eb62",
+    "name": "Music CD",
+    "description": "",
+    "imported": false,
+    "category": "miscellaneous",
+    "price": 14.99
+  },
+  {
+    "id": "c1e8d0b7-6eb8-4410-aa83-148056f3ffec",
+    "name": "Book",
+    "description": "",
+    "imported": false,
+    "category": "book",
+    "price": 12.49
+  },
+  {
+    "id": "bf0ac786-42d8-46c2-b533-16d53743bf9c",
+    "name": "Box of chocolates",
+    "description": "",
+    "imported": true,
+    "category": "food",
+    "price": 10.00
+  },
+  {
+    "id": "585e38f6-d868-4f41-8383-e33e2913040d",
+    "name": "Bottle of Perfume",
+    "description": "",
+    "imported": true,
+    "category": "miscellaneous",
+    "price": 47.50
+  },
+  {
+    "id": "057f1099-b49f-4f04-a9f6-fef81b993f10",
+    "name": "Bottle of Perfume 2",
+    "description": "",
+    "imported": true,
+    "category": "miscellaneous",
+    "price": 27.99
+  },
+  {
+    "id": "077f0d58-8420-4d36-b4da-9dd45469c5dc",
+    "name": "Bottle of Perfume 3",
+    "description": "",
+    "imported": false,
+    "category": "miscellaneous",
+    "price": 18.99
+  },
+  {
+    "id": "2bac0069-5aac-4bf7-ba6b-6b0085f7de0d",
+    "name": "Headache pills",
+    "description": "",
+    "imported": false,
+    "category": "medicine",
+    "price": 9.75
+  },
+  {
+    "id": "ce752fed-3a4b-4445-8ed3-0ded9bac440c",
+    "name": "Box of imported chocolates 2",
+    "description": "",
+    "imported": true,
+    "category": "food",
+    "price": 11.25
+  }
+]

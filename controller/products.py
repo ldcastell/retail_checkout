@@ -1,7 +1,10 @@
-from controller.base import BaseController
-from business_logic.products_bl import ProductBl
-from flask import Response
 import json
+from http import HTTPStatus
+
+from flask import Response
+
+from business_logic.products_bl import ProductBl
+from controller.base import BaseController
 
 
 class ProductsController(BaseController):
@@ -15,20 +18,20 @@ class ProductsController(BaseController):
     def post(self):
         new_product = self.req_parser.parse_args()
         result = self.products_bl.create(new_product)
-        return Response(response=result,
-                        status=201,
+        return Response(response=json.dumps(result),
+                        status=HTTPStatus.CREATED,
                         content_type="application/json")
 
     def get(self, product_id=None):
         result = self.products_bl.get(product_id)
         if result is not None:
             return Response(response=json.dumps(result),
-                            status=200,
+                            status=HTTPStatus.OK,
                             content_type="application/json")
         else:
             msg = "product with id {} was not found".format(product_id)
             return Response(response={"message": msg},
-                            status=404,
+                            status=HTTPStatus.NOT_FOUND,
                             content_type="application/json")
 
     def delete(self, product_id):

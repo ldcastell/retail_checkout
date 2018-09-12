@@ -1,0 +1,37 @@
+{
+  "order_1": {
+    "products": {
+      "c1e8d0b7-6eb8-4410-aa83-148056f3ffec": 1,
+      "cec87379-bdcf-44c7-b6f0-dfdce7c6eb62": 1,
+      "39b3ac50-3384-41b4-917e-f8fca6c2fd6e": 1
+    },
+    "expected_sales_tax": 1.5,
+    "expected_total": 29.83
+  },
+  "order_2": {
+    "products": {
+      "bf0ac786-42d8-46c2-b533-16d53743bf9c": 1,
+      "585e38f6-d868-4f41-8383-e33e2913040d": 1
+    },
+    "expected_sales_tax": 7.65,
+    "expected_total": 65.15
+  },
+  "order_3": {
+    "products": {
+      "057f1099-b49f-4f04-a9f6-fef81b993f10": 1,
+      "077f0d58-8420-4d36-b4da-9dd45469c5dc": 1,
+      "2bac0069-5aac-4bf7-ba6b-6b0085f7de0d": 1,
+      "ce752fed-3a4b-4445-8ed3-0ded9bac440c": 1
+    },
+    "expected_sales_tax": 6.70,
+    "expected_total":74.68
+  },
+  "bad_order": {
+    "products": {
+      "non_existing_product": 1,
+      "077f0d58-8420-4d36-b4da-9dd45469c5dc": 1,
+      "2bac0069-5aac-4bf7-ba6b-6b0085f7de0d": 1,
+      "ce752fed-3a4b-4445-8ed3-0ded9bac440c": 1
+    }
+  }
+}

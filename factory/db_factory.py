@@ -18,3 +18,11 @@ class DBFactory(object):
             msg = "storage_backend type '{}' is invalid or is not " \
                   "currently supported".format(self.type)
             raise Exception(msg)
+
+    def get_orders_dal(self):
+        if self.type == config.LOCAL_FS_STORAGE:
+            return orders_dal.OrdersLocalFsDal()
+        else:
+            msg = "storage_backend type '{}' is invalid or is not " \
+                  "currently supported".format(self.type)
+            raise Exception(msg)
