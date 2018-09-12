@@ -19,9 +19,9 @@ class ProductsDal(BaseLocalFsDal):
             content = f.read()
             f.seek(0)
             f.truncate()
-            products = json.load(content)
+            products = json.loads(content)
             products.append(product)
-            f.write(json.dump(products))
+            f.write(json.dumps(products))
 
     def delete(self, product_id):
         pass

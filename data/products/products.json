@@ -1,74 +1,82 @@
 [
   {
-    "id": "39b3ac50-3384-41b4-917e-f8fca6c2fd6e",
+    "price": 0.85,
+    "description": "",
+    "imported": false,
     "name": "Chocolate Bar",
-    "description": "",
-    "imported": false,
-    "category": "food",
-    "price": 0.85
+    "id": "39b3ac50-3384-41b4-917e-f8fca6c2fd6e",
+    "category": "food"
   },
   {
-    "id": "cec87379-bdcf-44c7-b6f0-dfdce7c6eb62",
+    "price": 14.99,
+    "description": "",
+    "imported": false,
     "name": "Music CD",
-    "description": "",
-    "imported": false,
-    "category": "miscellaneous",
-    "price": 14.99
+    "id": "cec87379-bdcf-44c7-b6f0-dfdce7c6eb62",
+    "category": "miscellaneous"
   },
   {
-    "id": "c1e8d0b7-6eb8-4410-aa83-148056f3ffec",
+    "price": 12.49,
+    "description": "",
+    "imported": false,
     "name": "Book",
-    "description": "",
-    "imported": false,
-    "category": "book",
-    "price": 12.49
+    "id": "c1e8d0b7-6eb8-4410-aa83-148056f3ffec",
+    "category": "book"
   },
   {
-    "id": "bf0ac786-42d8-46c2-b533-16d53743bf9c",
+    "price": 10.0,
+    "description": "",
+    "imported": true,
     "name": "Box of chocolates",
-    "description": "",
-    "imported": true,
-    "category": "food",
-    "price": 10.00
+    "id": "bf0ac786-42d8-46c2-b533-16d53743bf9c",
+    "category": "food"
   },
   {
-    "id": "585e38f6-d868-4f41-8383-e33e2913040d",
+    "price": 47.5,
+    "description": "",
+    "imported": true,
     "name": "Bottle of Perfume",
-    "description": "",
-    "imported": true,
-    "category": "miscellaneous",
-    "price": 47.50
+    "id": "585e38f6-d868-4f41-8383-e33e2913040d",
+    "category": "miscellaneous"
   },
   {
-    "id": "057f1099-b49f-4f04-a9f6-fef81b993f10",
+    "price": 27.99,
+    "description": "",
+    "imported": true,
     "name": "Bottle of Perfume 2",
-    "description": "",
-    "imported": true,
-    "category": "miscellaneous",
-    "price": 27.99
+    "id": "057f1099-b49f-4f04-a9f6-fef81b993f10",
+    "category": "miscellaneous"
   },
   {
-    "id": "077f0d58-8420-4d36-b4da-9dd45469c5dc",
+    "price": 18.99,
+    "description": "",
+    "imported": false,
     "name": "Bottle of Perfume 3",
-    "description": "",
-    "imported": false,
-    "category": "miscellaneous",
-    "price": 18.99
+    "id": "077f0d58-8420-4d36-b4da-9dd45469c5dc",
+    "category": "miscellaneous"
   },
   {
-    "id": "2bac0069-5aac-4bf7-ba6b-6b0085f7de0d",
+    "price": 9.75,
+    "description": "",
+    "imported": false,
     "name": "Headache pills",
-    "description": "",
-    "imported": false,
-    "category": "medicine",
-    "price": 9.75
+    "id": "2bac0069-5aac-4bf7-ba6b-6b0085f7de0d",
+    "category": "medicine"
   },
   {
-    "id": "ce752fed-3a4b-4445-8ed3-0ded9bac440c",
-    "name": "Box of imported chocolates 2",
+    "price": 11.25,
     "description": "",
     "imported": true,
-    "category": "food",
-    "price": 11.25
+    "name": "Box of imported chocolates 2",
+    "id": "ce752fed-3a4b-4445-8ed3-0ded9bac440c",
+    "category": "food"
+  },
+  {
+    "price": 2.5,
+    "description": "",
+    "imported": false,
+    "name": "Bag of potato chips",
+    "id": "f3753db3-0521-4214-b311-d31bae67921d",
+    "category": "food"
   }
 ]

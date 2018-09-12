@@ -20,9 +20,9 @@ class OrdersLocalFsDal(BaseLocalFsDal):
             content = f.read()
             f.seek(0)
             f.truncate()
-            orders = json.load(content)
+            orders = json.loads(content)
             orders.append(order)
-            f.write(json.dump(orders))
+            f.write(json.dumps(orders))
 
     def delete(self, order_id):
         pass
