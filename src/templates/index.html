@@ -106,6 +106,7 @@
 
 
     function addToCart(e){
+        $(e).attr('disabled', true);
         var id = $(e.parentNode.parentNode).attr("id");
         var quantity = $("#"+id).find("input").val();
         var name = $($("#"+id).children().get(0)).text();

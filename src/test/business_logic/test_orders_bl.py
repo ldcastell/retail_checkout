@@ -4,6 +4,9 @@ import pytest
 
 from business_logic.orders_bl import OrdersBl
 
+import mock
+
+from error import DataAccessLayerError
 
 class OrdersMockDal(object):
 
@@ -61,9 +64,32 @@ class TestOrdersBl:
 
                 assert receipt["total"] == orders[order]["expected_total"]
 
+    def test_submit_error_dal(self, orders):
+        orders_bl = OrdersBl(orders_dal=mock.Mock(wraps=OrdersMockDal()))
+        orders_bl.dal.create.side_effect = \
+            DataAccessLayerError("Error in DAL", TestOrdersBl.__name__)
+        with pytest.raises(DataAccessLayerError):
+            products = self.get_test_products_from_order(orders["order_3"])
+            result = orders_bl.submit(orders["order_3"], products)
+            assert result is None
+
     def test_submit_invalid_input(self, orders, orders_bl):
         with pytest.raises(ValueError):
-            orders_bl.submit(orders["order_3"], [])
+            result = orders_bl.submit(orders["order_3"], [])
+            assert result is None
         products = self.get_test_products_from_order(orders["order_3"])
         with pytest.raises(ValueError):
-            orders_bl.submit({}, products)
+            result2 = orders_bl.submit({}, products)
+            assert result2 is None
+
+    def test_get_receipt_valid_products(self, orders, orders_bl):
+        products = self.get_test_products_from_order(orders["order_3"])
+        result = orders_bl.get_receipt(products)
+        assert result is not None and len(result) > 0
+        assert result["sales_tax"] == orders["order_3"]["expected_sales_tax"]
+        assert result["total"] == orders["order_3"]["expected_total"]
+
+    def test_get_receipt_invalid_products(self, orders, orders_bl):
+        products = []
+        result = orders_bl.get_receipt(products)
+        assert len(result) == 0

@@ -13,7 +13,7 @@ class DBFactory(object):
 
     def get_product_dal(self):
         if self.type == config.LOCAL_FS_STORAGE:
-            return products_dal.ProductsDal()
+            return products_dal.ProductsLocalFsDal()
         else:
             msg = "storage_backend type '{}' is invalid or is not " \
                   "currently supported".format(self.type)

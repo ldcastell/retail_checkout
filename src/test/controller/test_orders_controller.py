@@ -81,7 +81,7 @@ class TestOrdersController:
         assert resp_json["message"] == "Product non_existing_product Not Found"
         assert resp.status_code == HTTPStatus.BAD_REQUEST
 
-    def test_post_bad_req(self,orders, client):
+    def test_post_bad_req(self, orders, client):
         orders_bl = OrdersBl(orders_dal=OrdersMockDal())
 
         bl_mock = mock.Mock(wraps=orders_bl)

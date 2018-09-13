@@ -46,7 +46,7 @@ class OrdersBl(object):
         receipt = dict()
 
         if products is None or len(products) ==0:
-            return {}
+            return receipt
 
         receipt["products"] = products
         receipt["sales_tax"] = 0.0
