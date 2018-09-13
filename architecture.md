@@ -12,7 +12,7 @@ solution from any DB Engine and make it extensible. This DB factory will be in c
 instantiating a DB connection depending on the application configuration. 
 
 The Business logic layer main purpose is to apply all the rules and validations related 
-to the business. In this case applying the taxes and generating the receipt when checking out the order.
+to the business. In this case applying the taxes and generating the receipt when submitting the order.
 This will allow us to incorporate new business rules without having to change the Data Access Layer 
 or the Presentation layer
 
