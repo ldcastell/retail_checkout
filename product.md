@@ -16,7 +16,9 @@ The product resource has the following schema:
 
 ### Create a product
 HTTP verb: POST
+
 HTTP successful return code: 201, 400, 500
+
 Endpoint: http://localhost:5000/products
 
 Curl example:
@@ -44,7 +46,9 @@ Returns a product with an ID. Example:
 
 ### List all products
 HTTP verb: GET
+
 HTTP potentialc return codes: 200, 400, 500
+
 Endpoint: http://localhost:5000/products
 
 Curl example:
@@ -56,7 +60,9 @@ with their IDs
 
 ### Get a single product
 HTTP verb: GET
+
 HTTP successful return code: 200, 400, 404, 500
+
 Endpoint: http://localhost:5000/products/<product_id>
 
 Curl example:
