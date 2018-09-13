@@ -48,14 +48,14 @@ some of the current supported environment variables and its default values are:
 ### Locally running the app:
 First install the python dependencies:
 ```bash
-from the retail_checkout directory
+#from the retail_checkout directory
 pip install -r src/requirements.txt
 ``` 
 
 Now you can run the app locally using the local FS as DB by first setting some configurations
 like the data directory path:
 ```bash
-from the retail_checkout directory
+#from the retail_checkout directory
 export RETAIL_LOCAL_STORAGE_BASE_PATH=`pwd`/data
 ```
 After that you can run the API and test the endpoints
