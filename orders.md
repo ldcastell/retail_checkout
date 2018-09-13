@@ -13,7 +13,9 @@ The Order resource has the following schema:
 
 ### Create an Order 
 HTTP verb: POST
+
 HTTP successful return code: 201, 400, 500
+
 Endpoint: http://localhost:5000/orders
 
 Curl example:
